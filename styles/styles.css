@@ -84,8 +84,6 @@ color: white;
 }
 
 
-
-
 .hero-section h1 { 
    position: absolute;
     left: -9999px;
@@ -103,15 +101,6 @@ color: white;
 }
 
  
-
-
-
-
-
-
-
-
-
 
   /* ------------------------------------Service section---------------------------------------- */
 
@@ -230,6 +219,23 @@ color: white;
   border-radius: 16px;
 }
 
+.trabajo-card {
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.trabajo-card video {
+  transition: transform 0.4s ease;
+}
+
+.trabajo-card:hover video {
+  transform: scale(1.05);
+}
+
+.trabajo-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
 
 
 /*--------------------------------------------Testimonios------------------------------------------------- */
@@ -251,18 +257,24 @@ color: white;
   margin-top: 60px;
 }
 
+
 .footer-container{
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
   display: flex;
+  flex-direction: row;        
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-/* Logo */
+
+
+
+
+
 .footer-logo{
   width: 120px;
   height: auto;
@@ -309,7 +321,7 @@ color: white;
 
 .footer-social a {
   color: black;
-  font-size: 15px;     /* tamaño del ícono */
+  font-size: 15px;     
   text-decoration: none;
   transition: opacity 0.3s, transform 0.3s;
 }
@@ -337,31 +349,9 @@ color: white;
     padding: 15px;
     font-size: 13px;
     opacity: 0.7;
-    text-align: center;  
     background-color: black;
     color: white;
 }    
-
-
-
-
-
-@media (max-width: 768px){
-  .footer-container{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -451,11 +441,7 @@ color: white;
 
 
 
-.footer-container{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+
 
 
  
