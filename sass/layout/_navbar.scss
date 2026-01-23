@@ -1,0 +1,28 @@
+
+@use "../utilities/variables" as *; 
+
+
+nav ul {
+     display: flex;
+     gap: 50px;
+     margin: 0; 
+     padding: 0; 
+
+
+}
+
+
+nav ul li {
+
+   list-style: none;
+
+}
+
+
+
+nav ul li a {
+
+font-size: $medida-2;
+text-decoration: none;
+color: white;
+}

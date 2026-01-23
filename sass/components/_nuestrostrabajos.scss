@@ -1,0 +1,30 @@
+/*------------------------------------Nuestos trabajos--------------------------------------------------- */
+
+@use "../utilities/variables" as *; 
+
+
+
+.trabajo-card video{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: $medida-4;
+}
+
+.trabajo-card {
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.trabajo-card video {
+  transition: transform 0.4s ease;
+}
+
+.trabajo-card:hover video {
+  transform: scale(1.05);
+}
+
+.trabajo-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}

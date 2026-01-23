@@ -1,0 +1,49 @@
+/* ------------------------------------Service section---------------------------------------- */
+
+@use "../utilities/variables" as *; 
+
+
+
+.service-section {
+    background-color: $color-fondo-2;
+    text-align: center;
+    padding: $medida-3 $medida-2;
+    
+}
+
+
+.service-section h2 {
+
+    font-size: $medida-3;
+    margin-bottom: $medida-3;
+    color: $color-primario;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.service-container {
+
+    display: flex;
+    justify-content: space-around;
+    gap: $medida-2;
+    margin: $medida-2 $medida-2;
+    
+}
+
+
+.service-card {
+
+   text-align: center;
+   background-color: rgba(254, 40, 166, 0.15);
+   padding: 30px $medida-2;
+   border-radius: 10px;
+   position: relative;
+   box-shadow: 0px 2px 8px $color-primario;
+   }
+
+ .service-card h3 {
+    margin-bottom: 15px;
+
+ }

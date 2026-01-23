@@ -1,0 +1,36 @@
+/* -------Hero section------- */
+
+@use "../utilities/variables" as *; 
+@use "../utilities/mixins" as *; 
+
+
+.hero-section {
+    height: 30vh;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    @include flex-center;
+    flex-direction: column;
+    padding: 0px $medida-2 ;
+}
+
+
+.hero-section h1 { 
+   position: absolute;
+    left: -9999px;
+
+    
+ }
+
+
+.hero-section h2 {
+
+    font-size: $medida-2;
+    color: $color-secundario;
+    text-shadow: 2px 2px 6px $color-primario;
+    margin-top: 160px;
+}
+
+ 

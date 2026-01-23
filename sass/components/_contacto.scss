@@ -1,0 +1,12 @@
+/*----------------------------------------Contacto------------------------------------------------------------ */
+
+@use "../utilities/variables" as *; 
+
+
+.btn-cv{
+   border:1px solid $color-fondo; 
+   }
+
+.btn-cv:hover{ 
+  background: $color-fondo; color: $color-secundario;
+ }

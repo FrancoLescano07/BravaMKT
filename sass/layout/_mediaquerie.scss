@@ -1,0 +1,165 @@
+/*------------------------------------------mediaquerie---------------------------------------- */
+
+@use "../utilities/variables" as *; 
+
+
+@media (max-width: 500px) {
+
+  header{
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 10px;
+  }
+
+  header img{
+    width: 120px;
+  }
+
+  nav ul{
+    flex-wrap: wrap;           
+    justify-content: center;
+    gap: $medida-1;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a{
+    font-size: $medida-4;
+    padding: 8px 10px;         
+    display: inline-block;
+  }
+
+
+
+.hero-section{
+    height: 45vh;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 0 $medida-4;
+  }
+
+  .hero-section h2{
+    font-size: $medida-4;
+    margin-top: 0;
+    padding-top: 20vh;
+    text-align: center;
+  }
+
+
+
+
+  .service-container,
+  .equipo-brava{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card,
+  .miembro-brava{
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+.trabajo-card video{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: $medida-4;
+}
+
+.trabajo-card{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.trabajo-card:hover{
+  transform: scale(1.02);
+}
+
+.modal video{
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+
+
+  .sitio-footer{
+    padding: 28px $medida-4;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .footer-logo{
+    width: 72px;      /* logo prolijo */
+    height: auto;
+    margin-bottom: 6px;
+  }
+
+ 
+  .footer-title{
+    margin: 0 0 10px 0;
+    font-size: $medida1;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    opacity: .9;
+  }
+
+  
+  .footer-social{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 320px;
+
+    padding: 10px $medida-1;
+    border-radius: 999px;
+    text-decoration: none;
+
+    border: 1px solid rgba(254,40,166,0.35);
+    background: rgba(254,40,166,0.08);
+    color: #111;
+  }
+
+  .footer-social a i{
+    color: #fe28a6;
+    font-size: 18px;
+  }
+
+  .footer-extra{
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .footer-text{
+    margin: 0;
+    opacity: .85;
+    line-height: 1.5;
+  }
+
+  .footer-bottom{
+    width: 100%;
+    margin-top: 10px;
+    padding-top: $medida-1;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    opacity: .75;
+    font-size: 13px;
+  }
+

@@ -1,0 +1,40 @@
+/* ----------------------------------------------------Equipo---------------------------------------------------------- */
+
+@use "../utilities/variables" as *; 
+
+
+.equipo-container h2 {
+    font-size: $medida-3;
+    margin-bottom: $medida-3;
+    color: $color-primario;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+
+.miembro-brava{
+  background-color: #f2ec61;
+  padding: $medida-2;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;        
+  box-sizing: border-box;
+}
+
+.miembro-brava img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: $medida-4;
+}
+
+
+.equipo-brava{
+  display: flex;
+  justify-content: space-around;
+  gap: $medida-2;
+  flex-wrap: wrap;       
+
+}
