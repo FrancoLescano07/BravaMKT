@@ -305,6 +305,10 @@ body {
   }
 
   .hero-section {
+    height: 18vh;          
+    background-position: center top;
+  }
+  .hero-section {
     height: 45vh;
     background-attachment: scroll;
     background-size: cover;
