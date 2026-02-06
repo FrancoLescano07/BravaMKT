@@ -305,13 +305,10 @@ body {
   }
 
   .hero-section {
-    height: 18vh;          
-    background-position: center top;
-  }
-  .hero-section {
-    height: 45vh;
+    height: 18vh;                
     background-attachment: scroll;
-    background-size: cover;
+    background-size: cover;       
+    background-position: center top;
     padding: 0 16px;
   }
   .hero-section h2 {
