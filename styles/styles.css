@@ -12,37 +12,50 @@ body {
 }
 
 /* ------------------Header----------------------- */
-header {
-  background-color: #fe28a6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+
+.navbar {
+  background-color: #fe28a6 
 }
 
-header img {
-  width: 150px;
+.navbar .navbar-brand span {
+  letter-spacing: .3px;
 }
 
-nav ul {
-  display: flex;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
+.navbar .nav-link {
+  color: #fff !important;
+  opacity: .95;
+  font-weight: 500;
 }
 
-nav ul li {
-  list-style: none;
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,.85);
+  text-underline-offset: 6px;
 }
 
-nav ul li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
+.navbar-toggler-icon {
+  filter: invert(1);
 }
+
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-brand img {
+  height: 120px; 
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
 
 /* -------Hero section------- */
 .hero-section {
@@ -116,7 +129,7 @@ nav ul li a {
 }
 
 .miembro-brava {
-  background-color: #f2ec61;
+  background-color: rgba(254, 40, 166, 0.08);
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -126,8 +139,7 @@ nav ul li a {
 
 .miembro-brava img {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
+  height: 200px cover;
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -266,28 +278,32 @@ nav ul li a {
   color: white;
 }
 
+
+
+ 
+ 
+
+
+
 /*------------------------------------------mediaquerie---------------------------------------- */
 @media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 10px;
+  
+  .navbar-collapse {
+    padding-top: 10px;
   }
-  header img {
-    width: 120px;
+
+  .navbar-nav {
+    gap: 8px !important;
   }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-    padding: 0;
-    margin: 0;
+
+  .navbar {
+    padding: 10px 0;
   }
-  nav ul li a {
-    font-size: 16px;
-    padding: 8px 10px;
-    display: inline-block;
+
+  .navbar-brand img {
+    height: 70px;
   }
+
   .hero-section {
     height: 45vh;
     background-attachment: scroll;
@@ -310,7 +326,7 @@ nav ul li a {
     width: 100%;
     max-width: 420px;
   }
-}
+
 .trabajo-card video {
   width: 100%;
   height: 260px;
@@ -332,7 +348,6 @@ nav ul li a {
   object-fit: contain;
 }
 
-@media (max-width: 500px){
 
   .sitio-footer{
     padding: 28px 16px;
@@ -346,73 +361,49 @@ nav ul li a {
     gap: 18px;
   }
 
-  .footer-logo{
-    width: 72px;      /* logo prolijo */
-    height: auto;
-    margin-bottom: 6px;
-  }
-
-  /* Títulos (Seguinos / Agencia Digital) */
-  .footer-title{
-    margin: 0 0 10px 0;
-    font-size: 14px;
-    letter-spacing: .8px;
-    text-transform: uppercase;
-    opacity: .9;
-  }
-
-  /* Redes: las apilamos pero con estilo "chip" */
-  .footer-social{
+  .footer-container > div{
     width: 100%;
+    max-width: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-logo{
+    width: 110px;
+    height: auto;
+  }
+
+  .footer-social{
     gap: 10px;
   }
 
   .footer-social a{
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 999px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 
-    width: 100%;
-    max-width: 320px;
-
-    padding: 10px 14px;
-    border-radius: 999px;
-    text-decoration: none;
-
-    border: 1px solid rgba(254,40,166,0.35);
-    background: rgba(254,40,166,0.08);
-    color: #111;
-  }
-
-  .footer-social a i{
-    color: #fe28a6;
-    font-size: 18px;
-  }
-
-  .footer-extra{
-    width: 100%;
-    max-width: 360px;
-  }
-
-  .footer-text{
-    margin: 0;
-    opacity: .85;
-    line-height: 1.5;
+    border: 1px solid rgba(255,255,255,.5);
+    background: rgba(255,255,255,.15);
+    color: #fff;
   }
 
   .footer-bottom{
     width: 100%;
+    background: transparent;
+    border-top: 1px solid rgba(255,255,255,.25);
     margin-top: 10px;
-    padding-top: 14px;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    opacity: .75;
-    font-size: 13px;
+    padding-top: 12px;
+    color: #fff;
+    text-align: center;
   }
 }
+
 
 
 /*---------------------------------Animaciones-----------------------------------------------*/

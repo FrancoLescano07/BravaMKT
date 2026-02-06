@@ -5,28 +5,22 @@
 
 @media (max-width: 500px) {
 
-  header{
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 10px;
+   
+  .navbar-collapse {
+    padding-top: 10px;
   }
 
-  header img{
-    width: 120px;
+  .navbar-nav {
+    gap: 8px !important;
   }
+}
 
-  nav ul{
-    flex-wrap: wrap;           
-    justify-content: center;
-    gap: $medida-1;
-    padding: 0;
-    margin: 0;
+.navbar {
+    padding: 10px 0;
   }
-
-  nav ul li a{
-    font-size: $medida-4;
-    padding: 8px 10px;         
-    display: inline-block;
+  .navbar-brand img {
+     height: 120px; 
+     width: auto;
   }
 
 
@@ -59,7 +53,7 @@
     width: 100%;
     max-width: 420px;
   }
-}
+
 
 .trabajo-card video{
   width: 100%;
